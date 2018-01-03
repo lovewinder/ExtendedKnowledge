@@ -63,13 +63,13 @@
 ## 向模板文档添加段落
 
   你可能想知道为什么我们需要添加段落？我们已经可以添加文本，难道段落不就是一大段的文本吗？好吧，既是也不是，一个段落确实看起来像是一大段文本，但你需要考虑的是换行符，如果你像前面一样添加一个Text元素并且在文本中添加换行符，它们并不会出现，当你想要换行符时，你就需要创建一个新的段落。然而，幸运的是这对于Docx4j来说也非常地容易。
-  
-    1. 从模版中找到要替换的段落
-    2. 将输入文本拆分成单独的行
-    3. 每一行基于模版中的段落创建一个新的段落
-    4. 移除原来的段落
+   
+   1. 从模版中找到要替换的段落
+   2. 将输入文本拆分成单独的行
+   3. 每一行基于模版中的段落创建一个新的段落
+   4. 移除原来的段落
 	
-	```
+```
 	private void replaceParagraph(String placeholder, String textToAdd, WordprocessingMLPackage template, ContentAccessor addTo) {
 	// 1. get the paragraph
 	List<Object> paragraphs = getAllElementFromObject(template.getMainDocumentPart(), P.class);
@@ -110,16 +110,16 @@
 	// 4. remove the original one
 	((ContentAccessor)toReplace.getParent()).getContent().remove(toReplace);
     }
-	```
+```
 	
 	在这个方法中我们使用提供的文本替换了段落的内容，然后将新的段落指定为addTo方法的参数。
 	
-	```
+```
 	String placeholder = "SJ_EX1";
 	String toAdd = "jos\ndirksen";
 
 	replaceParagraph(placeholder, toAdd, template, template.getMainDocumentPart());
-	```
+```
 	
 	
   如果你用更多的内容针对模版文档运行这个例子，你会注意到这些段落出现在你文档的底部。原因是段落被添加回主文档，如果你希望段落被添加到文档的指定位置（你通常会希望如此），你可以将它们包到一个1X1无边框的表格中，这个表格被视为段落的父亲并且新的段落可以添加到那里。
