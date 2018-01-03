@@ -103,7 +103,7 @@
   
   RPr是运行块的属性,可以对R对象进行操作
   
-  ** Tc tableCell>P paragraph>R run>Text text **
+  **Tc tableCell>P paragraph>R run>Text text**
   
   * 加粗字体和调整字体大小
   
