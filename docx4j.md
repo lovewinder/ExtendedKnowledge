@@ -1,4 +1,3 @@
-[TOC]
 # Docx4j
 
 ## Docx4jหตร๗
