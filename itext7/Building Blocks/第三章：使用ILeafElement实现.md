@@ -219,7 +219,7 @@
     document.add(img);
 ```
 
-***itext不会改变图片的质量，但不以为着分辨率不会被改变***
+***itext不会改变图片的质量，但不意味着分辨率不会被改变***
 
 ![adding an image to a Paragraph](https://developers.itextpdf.com/sites/default/files/C03F16.png)
 ```
