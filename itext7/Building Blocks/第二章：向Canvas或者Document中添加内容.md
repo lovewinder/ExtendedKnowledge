@@ -336,3 +336,77 @@ AreaBreak nextPage = new AreaBreak(AreaBreakType.NEXT_PAGE);
 * renderer.flush()方法可以调用flushSingleRenderer()方法
 
 ## 改变先前添加的内容
+
+![Start by showing the total number of pages](https://developers.itextpdf.com/sites/default/files/C02F14.png)
+  
+  图中第一行"This document has 34 pages."
+  
+  ***在之前都是一行一行的读取内容，是怎么得知一共是34页呢？***
+
+```
+    Document document = new Document(pdf, PageSize.A4, false);
+    Text totalPages = new Text("This document has {totalpages} pages.");
+    IRenderer renderer = new TextRenderer(totalPages);
+    totalPages.setNextRenderer(renderer);
+    document.add(new Paragraph(totalPages));
+```
+* 使用占位符{totalpages}来代替实际的总页码数。
+```
+    String total = renderer.toString().replace("{totalpages}",
+        String.valueOf(pdf.getNumberOfPages()));
+    ((TextRenderer)renderer).setText(total);
+    ((Text)renderer.getModelElement()).setNextRenderer(renderer);
+    document.relayout();
+    document.close();
+```
+* 检索Text对象的内容，并替换占位符。
+* relayout()：完成替换
+
+## 添加形如X of Y样式的页脚
+![Page X of Y footer](https://developers.itextpdf.com/sites/default/files/C02F15.png)
+```
+    Document document = new Document(pdf, PageSize.A4, false);
+        int n = pdf.getNumberOfPages();
+    Paragraph footer;
+    for (int page = 1; page <= n; page++) {
+        footer = new Paragraph(String.format("Page %s of %s", page, n));
+        document.showTextAligned(footer, 297.5f, 20, page,
+            TextAlignment.CENTER, VerticalAlignment.MIDDLE, 0);
+    }
+    document.close();
+```
+* showTextAligned()：可以在任何页面的绝对位置添加文字内容，并且可以选择水平和垂直的对齐方式和倾斜角度。
+* 这里并不需要改变PDF的布局，所以不需要relayout()方法。
+* 仅在immediateFlush参数为false时可用，否则会报错
+
+    Exception in thread "main" java.lang.NullPointerException at com.itextpdf.kernel.pdf.PdfDictionary.get(PdfDictionary.java)
+
+## 使用showTextAligned添加text
+**在RootElement类中实现了许多的showTextAligned()方法。这些方法可以被Canvas和Document对象使用来在绝对位置添加text。如果位置或者内容的参数不合适，内容可能会被分割或者无法在页面中正确显示。**
+!Text added at absolute positions[](https://developers.itextpdf.com/sites/default/files/C02F16_0.png)
+```
+    Paragraph title = new Paragraph("The Strange Case of Dr. Jekyll and Mr. Hyde");
+    document.showTextAligned(title, 36, 806, TextAlignment.LEFT);
+    Paragraph author = new Paragraph("by Robert Louis Stevenson");
+    document.showTextAligned(author, 36, 806,
+        TextAlignment.LEFT, VerticalAlignment.TOP);
+    document.showTextAligned("Jekyll", 300, 800,
+        TextAlignment.CENTER, 0.5f * (float)Math.PI);
+    document.showTextAligned("Hyde", 300, 800,
+        TextAlignment.CENTER, -0.5f * (float)Math.PI);
+    document.showTextAligned("Jekyll", 350, 800,
+        TextAlignment.CENTER, VerticalAlignment.TOP, 0.5f * (float)Math.PI);
+    document.showTextAligned("Hyde", 350, 800,
+        TextAlignment.CENTER, VerticalAlignment.TOP, -0.5f * (float)Math.PI);
+    document.showTextAligned("Jekyll", 400, 800,
+        TextAlignment.CENTER, VerticalAlignment.MIDDLE, 0.5f * (float)Math.PI);
+    document.showTextAligned("Hyde", 400, 800,
+        TextAlignment.CENTER, VerticalAlignment.MIDDLE, -0.5f * (float)Math.PI);
+```
+
+## 使用itext7扩展元素
+**itext7的核心代码库是开源的，可以免费使用，但如果想把它用在闭源项目中，你必须购买相关的许可证。**
+
+***开源并不代表着免费~***
+
+***用了一些例子说明在某些情况下购买商业许可证的重要性，itext公司为此也将部分代码闭源，只有在购买后才可以使用***
