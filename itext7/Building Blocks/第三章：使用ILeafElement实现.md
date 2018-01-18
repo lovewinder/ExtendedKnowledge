@@ -1,0 +1,3 @@
+# 使用ILeafElement实现
+
+  ElementPropertyContainer有三个直接的子类：Style，RootElement和AbstractElement。第一章中讨论了Style，之前的几章中也讨论了RootElement的子类Canvas和Document。在接下来的三张中
