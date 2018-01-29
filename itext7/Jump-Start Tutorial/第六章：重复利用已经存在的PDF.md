@@ -90,7 +90,7 @@
         TheRevenantNominations.put("Achievement in visual effects", 10);
     }
 ```
-* 定义一个红黑数
+* 定义一个红黑树
 
 >>> TreeMap是一个有序的Map，在构造方法中可以有比较器参数，按照定义的比较规则有序排列Map中的元素，没有参数的情况下使用的就是默认的比较器，
 在生成PDF中你会发现目录是按照字母顺序排列的。
