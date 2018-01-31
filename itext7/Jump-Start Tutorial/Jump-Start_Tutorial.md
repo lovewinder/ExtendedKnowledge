@@ -1,6 +1,6 @@
-# ½éÉÜ»ù±¾Ä£¿é
+# ç¬¬ä¸€ç« ï¼šä»‹ç»åŸºæœ¬æ¨¡å—
 
-## ´´½¨ÎÄµµ
+## åˆ›å»ºæ–‡æ¡£
 ```
     PdfWriter writer = new PdfWriter(dest);
     PdfDocument pdf = new PdfDocument(writer);
@@ -8,26 +8,26 @@
     document.add(new Paragraph("Hello World!"));
     document.close();
 ```
-* ´´½¨**PdfWriter**£¬Ëü¿ÉÒÔ´´½¨Ò»¸öpdfÎÄ¼ş£¬Ëü²»ÖªµÀÎÄµµºÍÊ²Ã´ÓĞ¹Ø£¬Ëü½ö½öÊÇÎªÁË±£Ö¤ÎÄµµµÄ½á¹¹ÍêÕû¡£ÔÚÕâ¸öÊµÀıÖĞ£¬Ïò¹¹Ôì·½·¨ÖĞ´«ÈëÁËÒ»¸öString×÷Îª²ÎÊı£¬²ÎÊı´ú±í×ÅÎÄµµµÄÂ·¾¶£¬±ÈÈç£º*result/chapter01/hello_world.pdf*
+* åˆ›å»º**PdfWriter**ï¼Œå®ƒå¯ä»¥åˆ›å»ºä¸€ä¸ªpdfæ–‡ä»¶ï¼Œå®ƒä¸çŸ¥é“æ–‡æ¡£å’Œä»€ä¹ˆæœ‰å…³ï¼Œå®ƒä»…ä»…æ˜¯ä¸ºäº†ä¿è¯æ–‡æ¡£çš„ç»“æ„å®Œæ•´ã€‚åœ¨è¿™ä¸ªå®ä¾‹ä¸­ï¼Œå‘æ„é€ æ–¹æ³•ä¸­ä¼ å…¥äº†ä¸€ä¸ªStringä½œä¸ºå‚æ•°ï¼Œå‚æ•°ä»£è¡¨ç€æ–‡æ¡£çš„è·¯å¾„ï¼Œæ¯”å¦‚ï¼š*result/chapter01/hello_world.pdf*
 
-    Õâ¸ö¹¹Ôì·½·¨Í¬Ê±¿ÉÒÔ½ÓÊÕ*OutputStream*×÷Îª²ÎÊı¡£
+    è¿™ä¸ªæ„é€ æ–¹æ³•åŒæ—¶å¯ä»¥æ¥æ”¶*OutputStream*ä½œä¸ºå‚æ•°ã€‚
     
-    * Èç¹ûÒªĞ´Ò»¸öwebÓ¦ÓÃ³ÌĞò,²ÎÊı¿ÉÒÔÎª*ServletOutputStream*
+    * å¦‚æœè¦å†™ä¸€ä¸ªwebåº”ç”¨ç¨‹åº,å‚æ•°å¯ä»¥ä¸º*ServletOutputStream*
     
-    * Èç¹ûÒªĞ´µ½ÄÚ´æÖĞ,²ÎÊı¿ÉÒÔÎª*ByteArrayOutputStream*
+    * å¦‚æœè¦å†™åˆ°å†…å­˜ä¸­,å‚æ•°å¯ä»¥ä¸º*ByteArrayOutputStream*
       
-* **PdfWriter**ÖªµÀÊ²Ã´±»Ğ´½øÁËÎÄµµ,ÒòÎªËü¼àÌıÁË**PdfDocument**
-    **PdfDocument**¹ÜÀí±»Ìí¼ÓµÄÄÚÈİ,½«ÄÚÈİ·ÖÅäµ½²»Í¬µÄÒ³Ãæ,²¢ÇÒ¸ú×ÙÈÎºÎÓë¸ÃÄÚÈİÓĞ¹ØµÄĞÅÏ¢
+* **PdfWriter**çŸ¥é“ä»€ä¹ˆè¢«å†™è¿›äº†æ–‡æ¡£,å› ä¸ºå®ƒç›‘å¬äº†**PdfDocument**
+    **PdfDocument**ç®¡ç†è¢«æ·»åŠ çš„å†…å®¹,å°†å†…å®¹åˆ†é…åˆ°ä¸åŒçš„é¡µé¢,å¹¶ä¸”è·Ÿè¸ªä»»ä½•ä¸è¯¥å†…å®¹æœ‰å…³çš„ä¿¡æ¯
     
-* Ò»µ©ÎÒÃÇ´´½¨ÁË**PdfWriter**ºÍ**PdfDocument**,ÎÒÃÇ¾ÍÒÑ¾­Íê³ÉÁËµÍ¼¶Ä£¿é
+* ä¸€æ—¦æˆ‘ä»¬åˆ›å»ºäº†**PdfWriter**å’Œ**PdfDocument**,æˆ‘ä»¬å°±å·²ç»å®Œæˆäº†ä½çº§æ¨¡å—
     
-    ½ÓÏÂÀ´´´½¨**Document**¶ÔÏó,½«**PdfDocument**×÷Îª²ÎÊı
+    æ¥ä¸‹æ¥åˆ›å»º**Document**å¯¹è±¡,å°†**PdfDocument**ä½œä¸ºå‚æ•°
     
-* ´´½¨°üº¬"Hello World"µÄ**Paragraph**,È»ºó½«paragraphÌí¼Óµ½**document**ÖĞ   
+* åˆ›å»ºåŒ…å«"Hello World"çš„**Paragraph**,ç„¶åå°†paragraphæ·»åŠ åˆ°**document**ä¸­   
 
-* ×îºó¹Ø±Õdocument,¾ÍÍê³ÉÁËPDFµÄ´´½¨
+* æœ€åå…³é—­document,å°±å®Œæˆäº†PDFçš„åˆ›å»º
 
-## Ìí¼Ó¸´ÔÓ¶ÎÂä
+## æ·»åŠ å¤æ‚æ®µè½
 ```
 PdfFont font = PdfFontFactory.createFont(FontConstants.TIMES_ROMAN);
 // Add a Paragraph
@@ -47,10 +47,10 @@ list.add(new ListItem("Never gonna give you up"))
 // Add the list
 document.add(list);
 ```
-* iTextÊ¹ÓÃHelvetica×÷ÎªÄ¬ÈÏ×ÖÌå¡£¿ÉÒÔÍ¨¹ı´´½¨PdfFontÊµÀıÀ´ĞŞ¸Ä×ÖÌå£¬¿ÉÒÔÍ¨¹ıPdfFontFactory»ñÈ¡PdfFontÊµÀı¡£
-* ¿ÉÒÔÒÔListĞÎÊ½Ìí¼Ó¶ÎÂä£¬list¿ÉÒÔÉèÖÃËõ½ø£¬ÉèÖÃ×ÖÌå¡£Í¨¹ıadd(new ListItem())ÏòlistÌí¼ÓÄÚÈİ¡£
+* iTextä½¿ç”¨Helveticaä½œä¸ºé»˜è®¤å­—ä½“ã€‚å¯ä»¥é€šè¿‡åˆ›å»ºPdfFontå®ä¾‹æ¥ä¿®æ”¹å­—ä½“ï¼Œå¯ä»¥é€šè¿‡PdfFontFactoryè·å–PdfFontå®ä¾‹ã€‚
+* å¯ä»¥ä»¥Listå½¢å¼æ·»åŠ æ®µè½ï¼Œlistå¯ä»¥è®¾ç½®ç¼©è¿›ï¼Œè®¾ç½®å­—ä½“ã€‚é€šè¿‡add(new ListItem())å‘listæ·»åŠ å†…å®¹ã€‚
 
-## Ïò¶ÎÂäÖĞÌí¼ÓÍ¼Æ¬
+## å‘æ®µè½ä¸­æ·»åŠ å›¾ç‰‡
 ```
     Image fox = new Image(ImageDataFactory.create(FOX));
     Image dog = new Image(ImageDataFactory.create(DOG));
@@ -60,10 +60,10 @@ document.add(list);
                 .add(dog);
     document.add(p);
 ```
-* ÏòImageDataFactoryÖĞ´«µİÒ»¸öÍ¼Æ¬Â·¾¶£¬Õâ¸ö¹¤³§Àà»á°ïÄã¸ù¾İ´«ÈëÍ¼Æ¬µÄÀàĞÍ£¨jpg,png,gif,bmp...)À´°ïÄã°ÑËüÃÇ´¦Àí³ÉÔÚPDFÖĞ¿ÉÓÃµÄÍ¼Æ¬¡£
-* ½«µÃµ½µÄImageÊµÀıÌí¼Óµ½¶ÎÂäÖĞ¼´¿É¡£
+* å‘ImageDataFactoryä¸­ä¼ é€’ä¸€ä¸ªå›¾ç‰‡è·¯å¾„ï¼Œè¿™ä¸ªå·¥å‚ç±»ä¼šå¸®ä½ æ ¹æ®ä¼ å…¥å›¾ç‰‡çš„ç±»å‹ï¼ˆjpg,png,gif,bmp...)æ¥å¸®ä½ æŠŠå®ƒä»¬å¤„ç†æˆåœ¨PDFä¸­å¯ç”¨çš„å›¾ç‰‡ã€‚
+* å°†å¾—åˆ°çš„Imageå®ä¾‹æ·»åŠ åˆ°æ®µè½ä¸­å³å¯ã€‚
 
-# ·¢²¼Êı¾İ¿â
+# å‘å¸ƒæ•°æ®åº“
 ```
     PdfWriter writer = new PdfWriter(dest);
     PdfDocument pdf = new PdfDocument(writer);    
@@ -83,10 +83,10 @@ document.add(list);
     document.add(table);
     document.close();
 ```
-* Ä¬ÈÏµÄÒ³Ãæ´óĞ¡ÎªA4£¬PageSize.A4.rotate()±íÊ¾Ê¹ÓÃºáÏòÒ³Ãæ
-* Ä¬ÈÏµÄÒ³±ß¾àÎª36ÏñËØ£¬setMargins(20,20,20,20)¿ÉÒÔÉèÖÃÒ³±ß¾à£¨£©
-* Table¶ÔÏó£¬ÉÏ±ß´úÂëÖĞµÄ´´½¨±í¸ñ¶ÔÏóµÄ·½Ê½ÖĞ£¬±íÊ¾Ò»¹²´´½¨9ÁĞ£¬Êı×Ö´ú±íÁËÃ¿Ò»ÁĞµÄÏà¶Ô¿í¶È¡£±í¸ñµÄ×Ü¿í¶ÈÎªÒ³Ãæ¿í¶ÈµÄ100%¼õÈ¥Ò³±ß¾à¡£
-* ¶ÁÈ¡µÚÒ»ĞĞ×÷Îª±íÍ·£¬ÉèÖÃ±íÍ·×ÖÌåÎªbold¡£¶ÁÈ¡Ê£ÏÂµÄÄÚÈİ£¬×÷ÎªÆÕÍ¨±í¸ñ¡£
+* é»˜è®¤çš„é¡µé¢å¤§å°ä¸ºA4ï¼ŒPageSize.A4.rotate()è¡¨ç¤ºä½¿ç”¨æ¨ªå‘é¡µé¢
+* é»˜è®¤çš„é¡µè¾¹è·ä¸º36åƒç´ ï¼ŒsetMargins(20,20,20,20)å¯ä»¥è®¾ç½®é¡µè¾¹è·ï¼ˆï¼‰
+* Tableå¯¹è±¡ï¼Œä¸Šè¾¹ä»£ç ä¸­çš„åˆ›å»ºè¡¨æ ¼å¯¹è±¡çš„æ–¹å¼ä¸­ï¼Œè¡¨ç¤ºä¸€å…±åˆ›å»º9åˆ—ï¼Œæ•°å­—ä»£è¡¨äº†æ¯ä¸€åˆ—çš„ç›¸å¯¹å®½åº¦ã€‚è¡¨æ ¼çš„æ€»å®½åº¦ä¸ºé¡µé¢å®½åº¦çš„100%å‡å»é¡µè¾¹è·ã€‚
+* è¯»å–ç¬¬ä¸€è¡Œä½œä¸ºè¡¨å¤´ï¼Œè®¾ç½®è¡¨å¤´å­—ä½“ä¸ºboldã€‚è¯»å–å‰©ä¸‹çš„å†…å®¹ï¼Œä½œä¸ºæ™®é€šè¡¨æ ¼ã€‚
 ```
 public void process(Table table, String line, PdfFont font, boolean isHeader) {
     StringTokenizer tokenizer = new StringTokenizer(line, ";");
@@ -103,15 +103,15 @@ public void process(Table table, String line, PdfFont font, boolean isHeader) {
     }
 }
 ```
-* table£º±»Ìí¼ÓµÄ±í¸ñ
-* line£º°´ĞĞ¶ÁÈ¡µÄÎÄ±¾ÄÚÈİ
-* font£º×ÖÌå
-* isHeader£ºÊÇ·ñÎª±íÍ·
+* tableï¼šè¢«æ·»åŠ çš„è¡¨æ ¼
+* lineï¼šæŒ‰è¡Œè¯»å–çš„æ–‡æœ¬å†…å®¹
+* fontï¼šå­—ä½“
+* isHeaderï¼šæ˜¯å¦ä¸ºè¡¨å¤´
 
-* table.addHeaderCell(cell)£ºÌí¼Ó±íÍ·µ¥Ôª¸ñ
-* table.addCell(cell)£ºÌí¼ÓÆÕÍ¨µ¥Ôª¸ñ
+* table.addHeaderCell(cell)ï¼šæ·»åŠ è¡¨å¤´å•å…ƒæ ¼
+* table.addCell(cell)ï¼šæ·»åŠ æ™®é€šå•å…ƒæ ¼
 
-# Ìí¼ÓµÍ¼¶ÄÚÈİ
+# ç¬¬äºŒç« ï¼šæ·»åŠ ä½çº§å†…å®¹
 
 ```
 canvas.moveTo(-406,0)
@@ -119,7 +119,7 @@ canvas.moveTo(-406,0)
       .stroke();
 ```
 
-## ÓÃcanvas»­Ïß
+## ç”¨canvasç”»çº¿
 ```
 PdfDocument pdf = new PdfDocument(new PdfWriter(dest));
 PageSize ps = PageSize.A4.rotate();
@@ -128,34 +128,34 @@ PdfCanvas canvas = new PdfCanvas(page);
 // Draw the axes
 pdf.close();
 ```
-* Ê×ÏÈ²»ÔÙÊ¹ÓÃDocument¶ÔÏó
-* ´´½¨PdfPageÊµÀı£¬²¢´´½¨PdfCanvasÊµÀı
-* Ê¹ÓÃcanvas¶ÔÏó»æÖÆÍ¼ĞÎ
-* ¹Ø±ÕPdfDocument
+* é¦–å…ˆä¸å†ä½¿ç”¨Documentå¯¹è±¡
+* åˆ›å»ºPdfPageå®ä¾‹ï¼Œå¹¶åˆ›å»ºPdfCanvaså®ä¾‹
+* ä½¿ç”¨canvaså¯¹è±¡ç»˜åˆ¶å›¾å½¢
+* å…³é—­PdfDocument
 
-***ÔÚÉÏÒ»ÕÂÖĞ×îºó¹Ø±ÕÎÄµµÊÇÍ¨¹ıdocument.close()À´Íê³ÉµÄ£¬ÏÖÔÚÃ»ÓĞDocument¶ÔÏó£¬²»µÃ²»Í¨¹ıpdf.close()¹Ø±ÕÎÄµµ***
+***åœ¨ä¸Šä¸€ç« ä¸­æœ€åå…³é—­æ–‡æ¡£æ˜¯é€šè¿‡document.close()æ¥å®Œæˆçš„ï¼Œç°åœ¨æ²¡æœ‰Documentå¯¹è±¡ï¼Œä¸å¾—ä¸é€šè¿‡pdf.close()å…³é—­æ–‡æ¡£***
 
-**ÔÚPDFÖĞ£¬72¸öÔªËØÊÇÒ»Ó¢³ß¡£**
+**åœ¨PDFä¸­ï¼Œ72ä¸ªå…ƒç´ æ˜¯ä¸€è‹±å°ºã€‚**
 
-## ×ø±êÏµÍ³ºÍ×ª»»¾ØÕó
+## åæ ‡ç³»ç»Ÿå’Œè½¬æ¢çŸ©é˜µ
 ```
 canvas.concatMatrix(1,0,0,1,ps.getWidth()/2,ps.getHeight()/2)
 ```
-* ¿ÉÒÔÍ¨¹ı×ª»¯¾ØÕóÀ´ÒÆ¶¯¶ÔÏóµÄÎ»ÖÃ
-* ÔÚPDFÖĞ£¬²»»áÈ¥ÒÆ¶¯¶ÔÏó£¬¶øÊÇÈ¥ÒÆ¶¯×ø±êÏµÍ³²¢ÔÚĞÂµÄ×ø±êÏµÍ³ÖĞ»æÖÆ¶ÔÏó
-* »æÖÆµÄÔ´×ø±êÏµÍ³µÄÎ»ÖÃÔÚÒ³ÃæµÄÖĞĞÄ
+* å¯ä»¥é€šè¿‡è½¬åŒ–çŸ©é˜µæ¥ç§»åŠ¨å¯¹è±¡çš„ä½ç½®
+* åœ¨PDFä¸­ï¼Œä¸ä¼šå»ç§»åŠ¨å¯¹è±¡ï¼Œè€Œæ˜¯å»ç§»åŠ¨åæ ‡ç³»ç»Ÿå¹¶åœ¨æ–°çš„åæ ‡ç³»ç»Ÿä¸­ç»˜åˆ¶å¯¹è±¡
+* ç»˜åˆ¶çš„æºåæ ‡ç³»ç»Ÿçš„ä½ç½®åœ¨é¡µé¢çš„ä¸­å¿ƒ
 
 ```
 a  b  0
 c  d  0
 e  f  1
 ```
-* µÚÈıÁĞÓÀÔ¶ÊÇ¡°0,0,1¡±£¬ÒòÎªÊÇ¶şÎ¬¿Õ¼ä
-* a´ú±íËõ·Å£¬b´ú±íĞı×ª£¬c´ú±í×ø±êÖáµÄĞ±¶È
-* eºÍf¶¨ÒåÁË×ø±êµÄÆ½ÒÆÎ»ÖÃ
+* ç¬¬ä¸‰åˆ—æ°¸è¿œæ˜¯â€œ0,0,1â€ï¼Œå› ä¸ºæ˜¯äºŒç»´ç©ºé—´
+* aä»£è¡¨ç¼©æ”¾ï¼Œbä»£è¡¨æ—‹è½¬ï¼Œcä»£è¡¨åæ ‡è½´çš„æ–œåº¦
+* eå’Œfå®šä¹‰äº†åæ ‡çš„å¹³ç§»ä½ç½®
 
-## Í¼ĞÎµÄ×´Ì¬
-### »æÖÆ×ø±êÏµ
+## å›¾å½¢çš„çŠ¶æ€
+### ç»˜åˆ¶åæ ‡ç³»
 ```
 // Draw X axis
 canvas.moveTo(-(ps.getWidth()/2-15),0)
@@ -192,31 +192,31 @@ for(int = -(int)ps.getHeight()/2-57);
          }
 canvas.stroke();
 ```
-* ºá×ø±ê×î×ó¶ËÎª¸º£¬ËµÃ÷ÁËconcatMatrix()·½·¨ÊÇ¿ÉÒÔ½«Êµ¼ÊµÄ×ø±êÔ­µã×öĞŞ¸Ä²¢Ó¦ÓÃµÄ
-* ½ÓÏÂÀ´»æÖÆÁËÁ½¸öÁ¬½ÓµÄÏß£º
-    1. miter-¼â½ÇÁ¬½Ó£¨Ä¬ÈÏ£©
-    2. bevel-Ğ±Ãæ½ÇÁ¬½Ó
-    3. round-Ô²½ÇÁ¬½Ó
-* Ö®ºóÊ¹ÓÃsetLineJoinStyle(...)»Ö¸´canvasµÄÔ­Ê¼×´Ì¬£¬µ«Õâ²¢²»ÊÇ×î¼ÑµÄ·½·¨
-* ÔÚ¸ü¸Äcanvas×´Ì¬Ö®Ç°£¬Ê¹ÓÃsaveState()£¬½ÓÏÂÀ´¾Í¿ÉÒÔÊ¹ÓÃÕâÖÖ×´Ì¬µÄcanvas»æÖÆ¸÷ÖÖÍ¼ĞÎÁË£¬×îºóÊ¹ÓÃrestoreState()½«canvasµÄ×´Ì¬»Ö¸´µ½saveState()Ö®Ç°µÄ×´Ì¬
-* stroke()·½·¨¿ÉÒÔÔÚËùÓĞÍ¼ĞÎ»æÖÆÍê³ÉÖ®ºóÔÙÊ¹ÓÃ
+* æ¨ªåæ ‡æœ€å·¦ç«¯ä¸ºè´Ÿï¼Œè¯´æ˜äº†concatMatrix()æ–¹æ³•æ˜¯å¯ä»¥å°†å®é™…çš„åæ ‡åŸç‚¹åšä¿®æ”¹å¹¶åº”ç”¨çš„
+* æ¥ä¸‹æ¥ç»˜åˆ¶äº†ä¸¤ä¸ªè¿æ¥çš„çº¿ï¼š
+    1. miter-å°–è§’è¿æ¥ï¼ˆé»˜è®¤ï¼‰
+    2. bevel-æ–œé¢è§’è¿æ¥
+    3. round-åœ†è§’è¿æ¥
+* ä¹‹åä½¿ç”¨setLineJoinStyle(...)æ¢å¤canvasçš„åŸå§‹çŠ¶æ€ï¼Œä½†è¿™å¹¶ä¸æ˜¯æœ€ä½³çš„æ–¹æ³•
+* åœ¨æ›´æ”¹canvasçŠ¶æ€ä¹‹å‰ï¼Œä½¿ç”¨saveState()ï¼Œæ¥ä¸‹æ¥å°±å¯ä»¥ä½¿ç”¨è¿™ç§çŠ¶æ€çš„canvasç»˜åˆ¶å„ç§å›¾å½¢äº†ï¼Œæœ€åä½¿ç”¨restoreState()å°†canvasçš„çŠ¶æ€æ¢å¤åˆ°saveState()ä¹‹å‰çš„çŠ¶æ€
+* stroke()æ–¹æ³•å¯ä»¥åœ¨æ‰€æœ‰å›¾å½¢ç»˜åˆ¶å®Œæˆä¹‹åå†ä½¿ç”¨
 
->>> ÓĞĞ©ÌØÊâµÄÔ¼¶¨ĞèÒª×ñÊØsaveState()ºÍrestoreState()Òª³É¶Ô³öÏÖ
+>>> æœ‰äº›ç‰¹æ®Šçš„çº¦å®šéœ€è¦éµå®ˆsaveState()å’ŒrestoreState()è¦æˆå¯¹å‡ºç°
 
-### ÑÕÉ«
+### é¢œè‰²
 ```
 Color grayColor = new DeviceCmyk(0.f,0.f,0.f,0.875f);
 Color greenColor = new DeviceCmyk(1.f,0.f,1.f,0.176f);
 Color blueColor = new DeviceCmyk(1.f,0.156f,0.f,0.118f);
 ```
-* PDFÖĞÓĞĞí¶à²»Í¬µÄÑÕÉ«¿Õ¼ä¡£ÔÚitextÖĞ£¬Ã¿Ò»ÖÖ¶¼ÔÚ²»Í¬µÄclassÖĞ±»ÊµÏÖ£¬×î³£ÓÃµÄÓĞ£º
-  1. DeviceGray-Ö»ÓÃÒ»¸ö²ÎÊıÈ·¶¨
-  2. DeviceRgb-ÓÉÈı¸ö²ÎÊıÈ·¶¨£¨ºì£¬ÂÌ£¬À¶£©
-  3. DeviceCmyk-ÓÉËÄ¸ö²ÎÊıÈ·¶¨£¨Çà£¬ºì£¬»Æ£¬ºÚ£©
+* PDFä¸­æœ‰è®¸å¤šä¸åŒçš„é¢œè‰²ç©ºé—´ã€‚åœ¨itextä¸­ï¼Œæ¯ä¸€ç§éƒ½åœ¨ä¸åŒçš„classä¸­è¢«å®ç°ï¼Œæœ€å¸¸ç”¨çš„æœ‰ï¼š
+  1. DeviceGray-åªç”¨ä¸€ä¸ªå‚æ•°ç¡®å®š
+  2. DeviceRgb-ç”±ä¸‰ä¸ªå‚æ•°ç¡®å®šï¼ˆçº¢ï¼Œç»¿ï¼Œè“ï¼‰
+  3. DeviceCmyk-ç”±å››ä¸ªå‚æ•°ç¡®å®šï¼ˆé’ï¼Œçº¢ï¼Œé»„ï¼Œé»‘ï¼‰
 
-**×¢ÒâÊ¹ÓÃColorËùÒıÓÃµÄ°üÊÇcom.itextpdf.kernel.color¶ø²»ÊÇjava.awt.Color**
+**æ³¨æ„ä½¿ç”¨Coloræ‰€å¼•ç”¨çš„åŒ…æ˜¯com.itextpdf.kernel.colorè€Œä¸æ˜¯java.awt.Color**
 
-### »æÖÆÍø¸ñ
+### ç»˜åˆ¶ç½‘æ ¼
 ```
 canvas.setLineWidth(0.5f).setStrokeColor(blueColor);
 for ( int i = -((int) ps.getHeight() / 2 - 57);
@@ -229,30 +229,30 @@ for ( int j = -((int) ps.getWidth() / 2 - 61);
       j < ((int) ps.getWidth() / 2 -60);
       j += 40){
             canvas.moveTo(j,-(ps.getHeight() / 2 - 15))
-                  .lineTo(j,ps.getHeight() / 2 -15£©£»
+                  .lineTo(j,ps.getHeight() / 2 -15ï¼‰ï¼›
       }
 }
 canvas.stroke();
 ```
-### »æÖÆĞéÏß
+### ç»˜åˆ¶è™šçº¿
 ```
 canvas.setLineWidth(2).setStrokeColor(greenColor)
       .setLineDash(10,10,8)
       .moveTo(-(ps.getWidth() / 2 - 15),-(ps.getHeight() / 2 -15))
       .lineTo(ps.getWidth() / 2 - 15,ps.getHeight() / 2 -15).stroke();
 ```
-* ÓĞ¶àÖÖ»æÖÆĞéÏßµÄ·½Ê½£¬ÉÏÊöµÄ·½Ê½ÊÇÊ¹ÓÃÁË3¸ö²ÎÊıµÄ·½Ê½
-  1. µÚÒ»¸ö²ÎÊı-ÊµÏß³¤¶È
-  2. ¼äÏ¶³¤¶È
-  3. ÆğÊ¼¾àÀë£¨ÌåÏÖÔÚµÚÒ»¸öĞéÏß¶ÎÉÏ£¬Ã»ÓĞÍêÈ«Àí½â£¬¿ÉÅäºÏĞŞ¸Ä´úÂë²ÎÊı¹Û²ìÉú³ÉµÄpdfÀí½â£©
+* æœ‰å¤šç§ç»˜åˆ¶è™šçº¿çš„æ–¹å¼ï¼Œä¸Šè¿°çš„æ–¹å¼æ˜¯ä½¿ç”¨äº†3ä¸ªå‚æ•°çš„æ–¹å¼
+  1. ç¬¬ä¸€ä¸ªå‚æ•°-å®çº¿é•¿åº¦
+  2. é—´éš™é•¿åº¦
+  3. èµ·å§‹è·ç¦»ï¼ˆä½“ç°åœ¨ç¬¬ä¸€ä¸ªè™šçº¿æ®µä¸Šï¼Œæ²¡æœ‰å®Œå…¨ç†è§£ï¼Œå¯é…åˆä¿®æ”¹ä»£ç å‚æ•°è§‚å¯Ÿç”Ÿæˆçš„pdfç†è§£ï¼‰
   
-**»¹ÓĞĞí¶àÆäËûµÄ³£ÓÃ»æÖÆ·½·¨**
+**è¿˜æœ‰è®¸å¤šå…¶ä»–çš„å¸¸ç”¨ç»˜åˆ¶æ–¹æ³•**
 1. curveTo()
 2. rectangle()
 3. fill()
 
-## ÎÄ±¾µÄ×´Ì¬
-![ÔÚ¾ø¶ÔÎ»ÖÃÌí¼ÓÎÄ±¾](https://developers.itextpdf.com/sites/default/files/C02F03.png)
+## æ–‡æœ¬çš„çŠ¶æ€
+![åœ¨ç»å¯¹ä½ç½®æ·»åŠ æ–‡æœ¬](https://developers.itextpdf.com/sites/default/files/C02F03.png)
 ```
     List<String> text = new ArrayList();
     text.add("         Episode V         ");
@@ -271,9 +271,9 @@ canvas.setLineWidth(2).setStrokeColor(greenColor)
     text.add("base on the remote ice world");
     text.add("of Hoth...");
 ```
-* ÊµÏÖÉÏÍ¼PDFµÄ×îºÃ·½·¨ÊÇÊ¹ÓÃÒ»¸öParagraph¶ÔÏóĞòÁĞwith²»Í¬µÄ¶ÔÆë·½Ê½£¨center for title,left for body£©£¬Ö®ºó½«ÕâĞ©Paragraph¶ÔÏóÌí¼Óµ½DocumentÖĞ£¨high-level·½·¨£©
-* Èç¹ûÊÇhigh-level·½·¨£¬Ìí¼Ó¹ı³ÌÖĞ»á×Ô¶¯»»ĞĞ£¬»á×Ô¶¯»»Ò³
-* Èç¹ûÊÇlow-level·½·¨£¬ĞèÒª×Ô¼ºÊÖ¶¯È¥°ÑÎÄ±¾·Ö¸î³ÉĞ¡µÄchunk
+* å®ç°ä¸Šå›¾PDFçš„æœ€å¥½æ–¹æ³•æ˜¯ä½¿ç”¨ä¸€ä¸ªParagraphå¯¹è±¡åºåˆ—withä¸åŒçš„å¯¹é½æ–¹å¼ï¼ˆcenter for title,left for bodyï¼‰ï¼Œä¹‹åå°†è¿™äº›Paragraphå¯¹è±¡æ·»åŠ åˆ°Documentä¸­ï¼ˆhigh-levelæ–¹æ³•ï¼‰
+* å¦‚æœæ˜¯high-levelæ–¹æ³•ï¼Œæ·»åŠ è¿‡ç¨‹ä¸­ä¼šè‡ªåŠ¨æ¢è¡Œï¼Œä¼šè‡ªåŠ¨æ¢é¡µ
+* å¦‚æœæ˜¯low-levelæ–¹æ³•ï¼Œéœ€è¦è‡ªå·±æ‰‹åŠ¨å»æŠŠæ–‡æœ¬åˆ†å‰²æˆå°çš„chunk
 
 ```
 canvas.concatMartx(1,0,0,1,0,ps.getHeight());
@@ -282,11 +282,11 @@ canvas.beginText()
       .setLeading(14 * 1.2f)
       .moveText(70,-40);
 ```
-* ½«×ø±êÏµÍ³µÄÔ­µãÉèÔÚ×óÉÏ½Ç
-* beginText()´´½¨text¶ÔÏó
-* setFontAndSize()ÉèÖÃ×ÖÌåºÍ×ÖºÅ£¬×÷ÓÃÓÚËùÓĞµÄcanvasËùÌí¼ÓµÄtext¶ÔÏóµÄ×ÖÌåºÍ×ÖºÅ
-* setLeading()ÉèÖÃĞĞ¾àÎª×ÖºÅµÄ1.2±¶
-* moveText()ÉèÖÃ¹â±êÆğÊ¼Î»ÖÃ
+* å°†åæ ‡ç³»ç»Ÿçš„åŸç‚¹è®¾åœ¨å·¦ä¸Šè§’
+* beginText()åˆ›å»ºtextå¯¹è±¡
+* setFontAndSize()è®¾ç½®å­—ä½“å’Œå­—å·ï¼Œä½œç”¨äºæ‰€æœ‰çš„canvasæ‰€æ·»åŠ çš„textå¯¹è±¡çš„å­—ä½“å’Œå­—å·
+* setLeading()è®¾ç½®è¡Œè·ä¸ºå­—å·çš„1.2å€
+* moveText()è®¾ç½®å…‰æ ‡èµ·å§‹ä½ç½®
 ```
 for(String s:text){
       // Add text and move to the next line
@@ -294,8 +294,8 @@ for(String s:text){
 }
 canvas.endText();
 ```
-* newlineShowText()»á½«¹â±êÒÆ¶¯µ½Ö®Ç°Ò»ĞĞµÄÏÂ±ßµÄ16.2¸öµ¥Î»£¨ĞĞ¾à£©´¦
-* endText()¹Ø±Õtext¶ÔÏó
+* newlineShowText()ä¼šå°†å…‰æ ‡ç§»åŠ¨åˆ°ä¹‹å‰ä¸€è¡Œçš„ä¸‹è¾¹çš„16.2ä¸ªå•ä½ï¼ˆè¡Œè·ï¼‰å¤„
+* endText()å…³é—­textå¯¹è±¡
 
 ![adding skewed and colored text at absolute positions](https://developers.itextpdf.com/sites/default/files/C02F04.png)
 
@@ -304,7 +304,7 @@ canvas.rectangel(0,0,ps.getWidth(),ps.getHeight())
       .setColor(Color.BLACK,true)
       .fill();
 ```
-* ¿ÉÒÔÊ¹ÓÃsetFillColor(Color.BLACK)À´Îª¾ØĞÎÌî³äÑÕÉ«£¬µ«Ñ¡ÔñÁË¸üÎªÍ¨ÓÃµÄsetColor()·½·¨£¬true or false¾ö¶¨ÁËÊÇÎªfill»¹ÊÇÎªstrokeÉÏÉ«
+* å¯ä»¥ä½¿ç”¨setFillColor(Color.BLACK)æ¥ä¸ºçŸ©å½¢å¡«å……é¢œè‰²ï¼Œä½†é€‰æ‹©äº†æ›´ä¸ºé€šç”¨çš„setColor()æ–¹æ³•ï¼Œtrue or falseå†³å®šäº†æ˜¯ä¸ºfillè¿˜æ˜¯ä¸ºstrokeä¸Šè‰²
 
 ```
     canvas.concatMatrix(1, 0, 0, 1, 0, ps.getHeight());
@@ -331,13 +331,13 @@ canvas.rectangel(0,0,ps.getWidth(),ps.getHeight())
     }
     canvas.endText();
 ```
-* ÒòÎª²»ÔÙÊ¹ÓÃnewlineShowText()£¬ËùÒÔ²»ĞèÒª¶¨Òåleading
-* ÉèÖÃÎÄ×ÖµÄÑÕÉ«Ê±£¬Ê¹ÓÃµÄÊÇsetColor(yellowColor,true)¡£ÕâÊÇÒòÎªÎÄ×Ö»áÕ¼ÓÃÂ·¾¶ÖĞËùÓĞµÄÄÚÈİ£¬Òò´ËÊ¹ÓÃtrue
-* canvas.setTextMatrix(fontSizeCoeff,0,angle,fontSizeCoeff/1.5f,xOffset+charXOffset,yOffset-lineSpacing).showText(String.valueOf(line.charAt(i)));aºÍd´ú±í×ÅËõ·Å£¬c´ú±í×ÅÇãĞ±¶È£¬eºÍf´ú±í×ÅÎ»ÖÃ
+* å› ä¸ºä¸å†ä½¿ç”¨newlineShowText()ï¼Œæ‰€ä»¥ä¸éœ€è¦å®šä¹‰leading
+* è®¾ç½®æ–‡å­—çš„é¢œè‰²æ—¶ï¼Œä½¿ç”¨çš„æ˜¯setColor(yellowColor,true)ã€‚è¿™æ˜¯å› ä¸ºæ–‡å­—ä¼šå ç”¨è·¯å¾„ä¸­æ‰€æœ‰çš„å†…å®¹ï¼Œå› æ­¤ä½¿ç”¨true
+* canvas.setTextMatrix(fontSizeCoeff,0,angle,fontSizeCoeff/1.5f,xOffset+charXOffset,yOffset-lineSpacing).showText(String.valueOf(line.charAt(i)));aå’Œdä»£è¡¨ç€ç¼©æ”¾ï¼Œcä»£è¡¨ç€å€¾æ–œåº¦ï¼Œeå’Œfä»£è¡¨ç€ä½ç½®
 
-# Ê¹ÓÃäÖÈ¾Æ÷ºÍÊÂ¼ş´¦ÀíÆ÷
+# ç¬¬ä¸‰ç« ï¼šä½¿ç”¨æ¸²æŸ“å™¨å’Œäº‹ä»¶å¤„ç†å™¨
 
-## documentäÖÈ¾Æ÷
+## documentæ¸²æŸ“å™¨
 ![Text and images organized in columns](https://developers.itextpdf.com/sites/default/files/C03F01.png)
 ```
     PdfDocument pdf = new PdfDocument(new PdfWriter(dest));
@@ -369,15 +369,15 @@ canvas.rectangel(0,0,ps.getWidth(),ps.getHeight())
      
     document.close();
 ```
-* offSet¶¨ÒåÁËÒ³±ß¾à
-* columnWidth¶¨ÒåÁËÃ¿Ò»ÁĞµÄ¿í¶È£¨×¢ÒâÃ¿Ò»ÁĞÖ®¼äÊÇÓĞ¼ä¸ôµÄ£¬¼ÙÉèÎª5¸öµ¥Î»£©£¬×Ü¿í¶ÈÊÇÒ³Ãæ¿í¶È¼õÈ¥Á½±¶µÄoffSet¼ÓÉÏÁ½¸ö5
-* columnHeight¶¨ÒåÁËÃ¿Ò»ÁĞµÄ¸ß¶È
-* Rectangle¶ÔÏó£¬new Rectangle(a,b,c,d)
-  * a±íÊ¾¾ØĞÎÆğÊ¼ºá×ø±ê
-  * b±íÊ¾¾ØĞÎÆğÊ¼×İ×ø±ê
-  * c±íÊ¾¾ØĞÎ¿í¶È
-  * d±íÊ¾¾ØĞÎ¸ß¶È
-* setRenderer()£¬Ò»µ©ÉùÃ÷ÁËdocumentµÄäÖÈ¾Æ÷£¬½ÓÏÂÀ´µÄÄÚÈİ²¼¾Ö¶¼Òª·ûºÏÕâ¸ö¶¨Òå
+* offSetå®šä¹‰äº†é¡µè¾¹è·
+* columnWidthå®šä¹‰äº†æ¯ä¸€åˆ—çš„å®½åº¦ï¼ˆæ³¨æ„æ¯ä¸€åˆ—ä¹‹é—´æ˜¯æœ‰é—´éš”çš„ï¼Œå‡è®¾ä¸º5ä¸ªå•ä½ï¼‰ï¼Œæ€»å®½åº¦æ˜¯é¡µé¢å®½åº¦å‡å»ä¸¤å€çš„offSetåŠ ä¸Šä¸¤ä¸ª5
+* columnHeightå®šä¹‰äº†æ¯ä¸€åˆ—çš„é«˜åº¦
+* Rectangleå¯¹è±¡ï¼Œnew Rectangle(a,b,c,d)
+  * aè¡¨ç¤ºçŸ©å½¢èµ·å§‹æ¨ªåæ ‡
+  * bè¡¨ç¤ºçŸ©å½¢èµ·å§‹çºµåæ ‡
+  * cè¡¨ç¤ºçŸ©å½¢å®½åº¦
+  * dè¡¨ç¤ºçŸ©å½¢é«˜åº¦
+* setRenderer()ï¼Œä¸€æ—¦å£°æ˜äº†documentçš„æ¸²æŸ“å™¨ï¼Œæ¥ä¸‹æ¥çš„å†…å®¹å¸ƒå±€éƒ½è¦ç¬¦åˆè¿™ä¸ªå®šä¹‰
 
 ```
     public static void addArticle(
@@ -405,14 +405,14 @@ canvas.rectangel(0,0,ps.getWidth(),ps.getHeight())
   
   timesNewRomanBold = PdfFontFactory.createFont(FontConstants.TIMES_BOLD);
   
-## Ê¹ÓÃ¿éäÖÈ¾Æ÷
+## ä½¿ç”¨å—æ¸²æŸ“å™¨
 
-**Ä¬ÈÏÇé¿öÏÂ£¬±í¸ñµ¥Ôª¸ñÃ»ÓĞ±³¾°ÑÕÉ«£¬±ß¿òÎªºÚÉ«£¬±ß¿òÏß¿íÎª0.5¸öµ¥Î»**
+**é»˜è®¤æƒ…å†µä¸‹ï¼Œè¡¨æ ¼å•å…ƒæ ¼æ²¡æœ‰èƒŒæ™¯é¢œè‰²ï¼Œè¾¹æ¡†ä¸ºé»‘è‰²ï¼Œè¾¹æ¡†çº¿å®½ä¸º0.5ä¸ªå•ä½**
 ![a table with colored cells and rounded borders](https://developers.itextpdf.com/sites/default/files/C03F02_0.png)
 ```
 PageSize ps = new PageSize(842,680);
 ```
-* ÉèÖÃ×Ô¶¨ÒåÒ³Ãæ´óĞ¡
+* è®¾ç½®è‡ªå®šä¹‰é¡µé¢å¤§å°
 ```
     PdfFont font = PdfFontFactory.createFont(FontConstants.HELVETICA);
     PdfFont bold = PdfFontFactory.createFont(FontConstants.HELVETICA_BOLD);
@@ -429,7 +429,7 @@ PageSize ps = new PageSize(842,680);
     br.close();
     document.add(table);
 ```
-* ±í¸ñÕ¼¾İÁË¿ÉÓÃÒ³Ãæ100%µÄ¿í¶È£¨ÊÇ·ñ»áÁôÓĞÒ³±ß¾à£¿£©
+* è¡¨æ ¼å æ®äº†å¯ç”¨é¡µé¢100%çš„å®½åº¦ï¼ˆæ˜¯å¦ä¼šç•™æœ‰é¡µè¾¹è·ï¼Ÿï¼‰
 
 ```
     public void process(Table table, String line, PdfFont font, boolean isHeader) {
@@ -464,10 +464,10 @@ PageSize ps = new PageSize(842,680);
         }
     }
 ```
-* setBorder()¸²¸ÇÁËÄ¬ÈÏµÄborder
+* setBorder()è¦†ç›–äº†é»˜è®¤çš„border
 
-***SolidBorderÀà¼Ì³ĞÁËBorderÀà£¬Í¬¼¶µÄÀà»¹ÓĞDashedBorder£¬DottedBorder£¬DoubleBorderµÈµÈ¡£Èç¹ûiText²¢Ã»ÓĞÌá¹©ÄãÏëÒªµÄborderÖÖÀà£¬
-Äã¿ÉÒÔ¼Ì³ĞBorderÀà£¬»òÕßÒÔÒÑ¾­Ìá¹©µÄ½Ó¿ÚÎªÁé¸Ğ´´½¨×Ô¶¨ÒåµÄCellRenderer½Ó¿Ú***
+***SolidBorderç±»ç»§æ‰¿äº†Borderç±»ï¼ŒåŒçº§çš„ç±»è¿˜æœ‰DashedBorderï¼ŒDottedBorderï¼ŒDoubleBorderç­‰ç­‰ã€‚å¦‚æœiTextå¹¶æ²¡æœ‰æä¾›ä½ æƒ³è¦çš„borderç§ç±»ï¼Œ
+ä½ å¯ä»¥ç»§æ‰¿Borderç±»ï¼Œæˆ–è€…ä»¥å·²ç»æä¾›çš„æ¥å£ä¸ºçµæ„Ÿåˆ›å»ºè‡ªå®šä¹‰çš„CellRendereræ¥å£***
 
 ```
     private class RoundedCornersCellRenderer extends CellRenderer {
@@ -494,19 +494,19 @@ PageSize ps = new PageSize(842,680);
         }
     }
 ```
-* ÕâÊÇÒ»¸ö×Ô¶¨ÒåµÄCellRenderer£¬½Ğ×÷RoundedCornersCellRenderer()
-* setBorder(null)£¬Èç¹û²»ÉèÖÃÎª¿ÕµÄ»°£¬»á³öÏÖÁ½¸öÖØµşµÄµ¥Ôª¸ñ£¬Ò»¸öÊÇitext»æÖÆµÄ£¬ÁíÒ»¸öÊÇäÖÈ¾Æ÷»æÖÆµÄ
-* CellRendererÀàÊÇBlockRendererÀàµÄÌØÊâÊµÏÖ
+* è¿™æ˜¯ä¸€ä¸ªè‡ªå®šä¹‰çš„CellRendererï¼Œå«ä½œRoundedCornersCellRenderer()
+* setBorder(null)ï¼Œå¦‚æœä¸è®¾ç½®ä¸ºç©ºçš„è¯ï¼Œä¼šå‡ºç°ä¸¤ä¸ªé‡å çš„å•å…ƒæ ¼ï¼Œä¸€ä¸ªæ˜¯itextç»˜åˆ¶çš„ï¼Œå¦ä¸€ä¸ªæ˜¯æ¸²æŸ“å™¨ç»˜åˆ¶çš„
+* CellRendererç±»æ˜¯BlockRendererç±»çš„ç‰¹æ®Šå®ç°
 
-***BlockRenderereÀà¿ÉÒÔ±»ÓÃÓÚBlockElements£¬±ÈÈçParagraphºÍList¡£ÕâĞ©äÖÈ¾Æ÷ÔÊĞíÄãÖØĞ´draw()À´´´½¨×Ô¶¨ÒåµÄäÖÈ¾Æ÷¡£***
+***BlockRenderereç±»å¯ä»¥è¢«ç”¨äºBlockElementsï¼Œæ¯”å¦‚Paragraphå’ŒListã€‚è¿™äº›æ¸²æŸ“å™¨å…è®¸ä½ é‡å†™draw()æ¥åˆ›å»ºè‡ªå®šä¹‰çš„æ¸²æŸ“å™¨ã€‚***
 
-* getOccupiedAreaBBox()·µ»ØÒ»¸öRectangle¶ÔÏó£¬¶ÔÏóÄÚÈİÎªÕâ¸öBlockElementËù¶ÔÓ¦µÄ±ß½ç¿ò
-* ²ÎÊıdrawContext¿ÉÒÔÌá¹©PdfCanvasÊµÀı
-* Õâ¸öÀı×ÓÑİÊ¾ÁËÈçºÎ½«high-level£¨Cell£©ºÍlow-level·½·¨°ó¶¨
+* getOccupiedAreaBBox()è¿”å›ä¸€ä¸ªRectangleå¯¹è±¡ï¼Œå¯¹è±¡å†…å®¹ä¸ºè¿™ä¸ªBlockElementæ‰€å¯¹åº”çš„è¾¹ç•Œæ¡†
+* å‚æ•°drawContextå¯ä»¥æä¾›PdfCanvaså®ä¾‹
+* è¿™ä¸ªä¾‹å­æ¼”ç¤ºäº†å¦‚ä½•å°†high-levelï¼ˆCellï¼‰å’Œlow-levelæ–¹æ³•ç»‘å®š
 
-***»æÖÆÇúÏßµÄÊ±ºòĞèÒªÒ»Ğ©ÊıÑ§ÖªÊ¶£¬µ«ÊÇÕâ²¢²»¸´ÔÓ£¬±ğº¦ÅÂ***
+***ç»˜åˆ¶æ›²çº¿çš„æ—¶å€™éœ€è¦ä¸€äº›æ•°å­¦çŸ¥è¯†ï¼Œä½†æ˜¯è¿™å¹¶ä¸å¤æ‚ï¼Œåˆ«å®³æ€•***
 
-## ÊÂ¼ş´¦ÀíÆ÷
+## äº‹ä»¶å¤„ç†å™¨
 ![repeating background color and watermark](https://developers.itextpdf.com/sites/default/files/C03F03_1.png)
 ```
     PdfDocument pdf = new PdfDocument(new PdfWriter(dest));
@@ -528,8 +528,8 @@ PageSize ps = new PageSize(842,680);
     document.add(table);
     document.close();
 ```
-* addEventHandler(PdfDocumentEvent.END_PAGE,new MyEventHandler());MyEventHandlerÊÇ½Ó¿ÚIEventHandlerµÄÊµÏÖ£¬
-Õâ¸ö½Ó¿ÚÖĞÖ»ÓĞÒ»¸ö·½·¨£ºhandleEvent()¡£µ±Ò³Ãæ½áÊøÊ±Õâ¸ö·½·¨½«»á´¥·¢£¨Ò³Ãæ½áÊø°üÀ¨ĞÂÒ³ÃæµÄ´´½¨ºÍ¾ÉÒ³ÃæµÄ½áÊø£©
+* addEventHandler(PdfDocumentEvent.END_PAGE,new MyEventHandler());MyEventHandleræ˜¯æ¥å£IEventHandlerçš„å®ç°ï¼Œ
+è¿™ä¸ªæ¥å£ä¸­åªæœ‰ä¸€ä¸ªæ–¹æ³•ï¼šhandleEvent()ã€‚å½“é¡µé¢ç»“æŸæ—¶è¿™ä¸ªæ–¹æ³•å°†ä¼šè§¦å‘ï¼ˆé¡µé¢ç»“æŸåŒ…æ‹¬æ–°é¡µé¢çš„åˆ›å»ºå’Œæ—§é¡µé¢çš„ç»“æŸï¼‰
 ```
     protected class MyEventHandler implements IEventHandler {
         public void handleEvent(Event event) {
@@ -571,20 +571,20 @@ PageSize ps = new PageSize(842,680);
     }
 ```
 
-***²»Í¬µÄÂ·¾¶ºÍĞÎ×´ÔÚÍ³Ò»Ò³ÃæÉÏ¿ÉÒÔÖØµş£¬»æÖÆµÄ¹æÔò¾ÍÊÇ£¬content streamÏÈÀ´µÄ¾ÍÏÈ»­¡£ÎÒÃÇÏëÒªÔÚÌí¼Ó±³¾°Ê±Ã¿´Î¶¼ÄÜ¹»½«ËùÓĞµÄ
-Ò³ÃæÍêÈ«äÖÈ¾¡£Ã¿¸öPdfPage¶ÔÏó¶¼±£´æÁËÒ»×écontent streams£¬Äã¿ÉÒÔ½«Ë÷Òı×÷Îª²ÎÊı£¬Ê¹ÓÃgetContentStream()·½·¨À´»ñÈ¡Ã¿¸öµ¥¶ÀµÄcontent stream¡£
-¿ÉÒÔÊ¹ÓÃgetFirstContentStream()ºÍgetLastContentStream()À´»ñÈ¡µÚÒ»¸öºÍ×îºóÒ»¸öcontent stream¡£Ò²¿ÉÒÔÊ¹ÓÃnewContentStreamBefore()ºÍ
-newContentStreamAfter()·½·¨´´½¨ĞÂµÄcontent stream***
+***ä¸åŒçš„è·¯å¾„å’Œå½¢çŠ¶åœ¨ç»Ÿä¸€é¡µé¢ä¸Šå¯ä»¥é‡å ï¼Œç»˜åˆ¶çš„è§„åˆ™å°±æ˜¯ï¼Œcontent streamå…ˆæ¥çš„å°±å…ˆç”»ã€‚æˆ‘ä»¬æƒ³è¦åœ¨æ·»åŠ èƒŒæ™¯æ—¶æ¯æ¬¡éƒ½èƒ½å¤Ÿå°†æ‰€æœ‰çš„
+é¡µé¢å®Œå…¨æ¸²æŸ“ã€‚æ¯ä¸ªPdfPageå¯¹è±¡éƒ½ä¿å­˜äº†ä¸€ç»„content streamsï¼Œä½ å¯ä»¥å°†ç´¢å¼•ä½œä¸ºå‚æ•°ï¼Œä½¿ç”¨getContentStream()æ–¹æ³•æ¥è·å–æ¯ä¸ªå•ç‹¬çš„content streamã€‚
+å¯ä»¥ä½¿ç”¨getFirstContentStream()å’ŒgetLastContentStream()æ¥è·å–ç¬¬ä¸€ä¸ªå’Œæœ€åä¸€ä¸ªcontent streamã€‚ä¹Ÿå¯ä»¥ä½¿ç”¨newContentStreamBefore()å’Œ
+newContentStreamAfter()æ–¹æ³•åˆ›å»ºæ–°çš„content stream***
 
-* ÔÚhandleEvent()·½·¨ÖĞ£¬ÎÒÃÇÊ¹ÓÃÁËPdfCanvasµÄ¹¹Ôì·½·¨£¬ÏÂÃæ½éÉÜÒ»ÏÂÏà¹Ø²ÎÊı£º
-  * page.newContentStreamBefore()£ºÎªÁË²»Ê¹Ò³Ã¼Ò³½ÅºÍË®Ó¡¸²¸ÇÕıÎÄÄÚÈİ
-  * page.getResources()£ºÃ¿¸öcontent stream¶¼ºÍÒ»Ğ©Íâ²¿×ÊÔ´Ïà¹Ø£¬±ÈÈç×ÖÌåºÍÍ¼Æ¬£¬itextĞèÒªÖªµÀÕâĞ©×ÊÔ´
+* åœ¨handleEvent()æ–¹æ³•ä¸­ï¼Œæˆ‘ä»¬ä½¿ç”¨äº†PdfCanvasçš„æ„é€ æ–¹æ³•ï¼Œä¸‹é¢ä»‹ç»ä¸€ä¸‹ç›¸å…³å‚æ•°ï¼š
+  * page.newContentStreamBefore()ï¼šä¸ºäº†ä¸ä½¿é¡µçœ‰é¡µè„šå’Œæ°´å°è¦†ç›–æ­£æ–‡å†…å®¹
+  * page.getResources()ï¼šæ¯ä¸ªcontent streaméƒ½å’Œä¸€äº›å¤–éƒ¨èµ„æºç›¸å…³ï¼Œæ¯”å¦‚å­—ä½“å’Œå›¾ç‰‡ï¼Œitextéœ€è¦çŸ¥é“è¿™äº›èµ„æº
   * pdfDoc
 
   
-# ÖÆ×÷¾ßÓĞ½»»¥¹¦ÄÜµÄPDF£¨µ±Ç°±¾ÕÂÄÚÈİÎÒÃÇºÜÉÙÉæ¼°£©
+# ç¬¬å››ç« ï¼šåˆ¶ä½œå…·æœ‰äº¤äº’åŠŸèƒ½çš„PDFï¼ˆå½“å‰æœ¬ç« å†…å®¹æˆ‘ä»¬å¾ˆå°‘æ¶‰åŠï¼‰
 
-## Ìí¼ÓAnnotations
+## æ·»åŠ Annotations
 ![a text annotation](https://developers.itextpdf.com/sites/default/files/C04F01.png)
 ```
     PdfAnnotation ann = new PdfTextAnnotation(new Rectangle(20, 800, 0, 0))
@@ -605,8 +605,8 @@ newContentStreamAfter()·½·¨´´½¨ĞÂµÄcontent stream***
             .add(" to learn more...");
     document.add(p);
 ```
-***link ann²»»á±»Ìí¼Óµ½content streamÖĞ£¬ÒòÎªann²»ÊôÓÚcontent streamµÄÒ»²¿·Ö¡£Ëü·´¶ø»á±»Ìí¼Óµ½¶ÔÓ¦Ò³ÃæµÄ¶ÔÓ¦×ø±êÏµÖĞ£¨Õâ¾ä»°µÄ¾ßÌåÒâÒå²»Ã÷£¬ÔİÊ±²»ÓÃÉî¾¿£©¡£
-ÎÄ±¾±»ÉèÖÃÎª¿Éµã»÷µÄ£¬²¢²»»á¸Ä±äÎÄ±¾ÔÚcontent streamÖĞµÄ×´Ì¬¡£***
+***link annä¸ä¼šè¢«æ·»åŠ åˆ°content streamä¸­ï¼Œå› ä¸ºannä¸å±äºcontent streamçš„ä¸€éƒ¨åˆ†ã€‚å®ƒåè€Œä¼šè¢«æ·»åŠ åˆ°å¯¹åº”é¡µé¢çš„å¯¹åº”åæ ‡ç³»ä¸­ï¼ˆè¿™å¥è¯çš„å…·ä½“æ„ä¹‰ä¸æ˜ï¼Œæš‚æ—¶ä¸ç”¨æ·±ç©¶ï¼‰ã€‚
+æ–‡æœ¬è¢«è®¾ç½®ä¸ºå¯ç‚¹å‡»çš„ï¼Œå¹¶ä¸ä¼šæ”¹å˜æ–‡æœ¬åœ¨content streamä¸­çš„çŠ¶æ€ã€‚***
 
 ![a line annotation](https://developers.itextpdf.com/sites/default/files/C04F03.png)
 ```
@@ -641,26 +641,26 @@ newContentStreamAfter()·½·¨´´½¨ĞÂµÄcontent stream***
     pdf.getFirstPage().addAnnotation(ann);
 ```
 
-***»áÔÚÒÔºóµÄÕÂ½ÚÖĞÓĞ×¨ÃÅµÄ½Ì³ÌÀ´½²½âÕâĞ©×¢ÊÍÏà¹ØµÄ´úÂë***
+***ä¼šåœ¨ä»¥åçš„ç« èŠ‚ä¸­æœ‰ä¸“é—¨çš„æ•™ç¨‹æ¥è®²è§£è¿™äº›æ³¨é‡Šç›¸å…³çš„ä»£ç ***
 
-## ´´½¨½»»¥µÄ±í¸ñ
+## åˆ›å»ºäº¤äº’çš„è¡¨æ ¼
 
 ![an interactive form](https://developers.itextpdf.com/sites/default/files/C04F05.png)
 
-  ËäÈ»¸öÈË¾õµÃ½»»¥±í¸ñ²¿·ÖºÜÓĞÈ¤£¬µ«ÊÇÓĞÒÔÏÂ¼¸ÌõÀíÓÉÈÃÎÒ¾ö¶¨²»ÔÙ»¨·ÑÊ±¼äÈ¥ÕûÀíÏà¹Ø×ÊÁÏ
+  è™½ç„¶ä¸ªäººè§‰å¾—äº¤äº’è¡¨æ ¼éƒ¨åˆ†å¾ˆæœ‰è¶£ï¼Œä½†æ˜¯æœ‰ä»¥ä¸‹å‡ æ¡ç†ç”±è®©æˆ‘å†³å®šä¸å†èŠ±è´¹æ—¶é—´å»æ•´ç†ç›¸å…³èµ„æ–™
    
-    1. ´ó¶àÊıÇé¿öÏÂ£¬HTMLµÄ±íµ¥¸üÎª¶¯Ì¬£¬·½±ã
-    2. ¼´Ê¹ÊÇ½Ì³ÌÖĞÒ²½²µ½£¬¼¸ºõ²»»áÊ¹ÓÃÕâÖÖ¼¼Êõ
-    3. ¶ÔÓÚÎÒÃÇ±¨¸æ¶øÑÔ²»»áÉæ¼°½»»¥±íµ¥Ïà¹ØÄÚÈİ
+    1. å¤§å¤šæ•°æƒ…å†µä¸‹ï¼ŒHTMLçš„è¡¨å•æ›´ä¸ºåŠ¨æ€ï¼Œæ–¹ä¾¿
+    2. å³ä½¿æ˜¯æ•™ç¨‹ä¸­ä¹Ÿè®²åˆ°ï¼Œå‡ ä¹ä¸ä¼šä½¿ç”¨è¿™ç§æŠ€æœ¯
+    3. å¯¹äºæˆ‘ä»¬æŠ¥å‘Šè€Œè¨€ä¸ä¼šæ¶‰åŠäº¤äº’è¡¨å•ç›¸å…³å†…å®¹
     
-  µ«»¹ÊÇÓĞÓÅµãµÄ
+  ä½†è¿˜æ˜¯æœ‰ä¼˜ç‚¹çš„
     
-    1. ¶ÔÓÚ¸ñÊ½ÑÏ¸ñµÄ±íµ¥£¬ÕâÖÖ¼¼Êõ»á¸üÊÊÓÃ
-    2. ²»×÷ÎªÊÕ¼¯Êı¾İµÄ±íµ¥£¬¶øÊÇ×÷ÎªÄ£°åÊ¹ÓÃÊ±¸üÎª·½±ã
+    1. å¯¹äºæ ¼å¼ä¸¥æ ¼çš„è¡¨å•ï¼Œè¿™ç§æŠ€æœ¯ä¼šæ›´é€‚ç”¨
+    2. ä¸ä½œä¸ºæ”¶é›†æ•°æ®çš„è¡¨å•ï¼Œè€Œæ˜¯ä½œä¸ºæ¨¡æ¿ä½¿ç”¨æ—¶æ›´ä¸ºæ–¹ä¾¿
 
 
-# ²Ù×÷ÒÑ´æÔÚµÄPDF
-***ÔÚµÚËÄÕÂÖĞ´´½¨½»»¥Ê½±í¸ñ±»Ìø¹ıÁË£¬µ«ÊÇÆäÖĞÓĞÒ»²¿·Ö¹ØÓÚ²Ù×÷ÒÑ´æÔÚ±í¸ñµÄÄÚÈİĞèÒªÌØ±ğËµÃ÷£¬ºÍµÚÎåÕÂµÄÄÚÈİÓĞÁªÏµ£¬Òò´ËÔÚµÚÎåÕÂÖĞ½øĞĞËµÃ÷***
+# ç¬¬äº”ç« ï¼šæ“ä½œå·²å­˜åœ¨çš„PDF
+***åœ¨ç¬¬å››ç« ä¸­åˆ›å»ºäº¤äº’å¼è¡¨æ ¼è¢«è·³è¿‡äº†ï¼Œä½†æ˜¯å…¶ä¸­æœ‰ä¸€éƒ¨åˆ†å…³äºæ“ä½œå·²å­˜åœ¨è¡¨æ ¼çš„å†…å®¹éœ€è¦ç‰¹åˆ«è¯´æ˜ï¼Œå’Œç¬¬äº”ç« çš„å†…å®¹æœ‰è”ç³»ï¼Œå› æ­¤åœ¨ç¬¬äº”ç« ä¸­è¿›è¡Œè¯´æ˜***
 ![a filled-out interactive form](https://developers.itextpdf.com/sites/default/files/C04F06_0.png)
 ```
     PdfDocument pdf = new PdfDocument(
@@ -674,11 +674,11 @@ newContentStreamAfter()·½·¨´´½¨ĞÂµÄcontent stream***
     fields.get("experience3").setValue("Yes");
     fields.get("shift").setValue("Any");
     fields.get("info").setValue("I was 38 years old when I became an MI6 agent.");
-    // form.flattenFields(); // Èç¹ûÄã²»Ï£ÍûÖÕ¶ËĞŞ¸ÄÕâĞ©Ñ¡Ïî
+    // form.flattenFields(); // å¦‚æœä½ ä¸å¸Œæœ›ç»ˆç«¯ä¿®æ”¹è¿™äº›é€‰é¡¹
     pdf.close();
 ```
 
-## Ìí¼ÓannºÍcontent
+## æ·»åŠ annå’Œcontent
 ![an updated form](https://developers.itextpdf.com/sites/default/files/C05F01_1.png)
 ```
     PdfDocument pdfDoc =
@@ -704,12 +704,12 @@ newContentStreamAfter()·½·¨´´½¨ĞÂµÄcontent stream***
             .endText();
 ```
 
-## Ìí¼ÓÒ³Ã¼£¬Ò³½ÅºÍË®Ó¡
+## æ·»åŠ é¡µçœ‰ï¼Œé¡µè„šå’Œæ°´å°
 ![UFO sightings report](https://developers.itextpdf.com/sites/default/files/C05F04_1.png)
 ![UFO sightings report with header, footer, and watermark](https://developers.itextpdf.com/sites/default/files/C05F05_0_0.png)
-* ÔÚµÚÈıÕÂÖĞ£¬ÔÚÌí¼ÓÒ³½ÅµÄÊ±ºò£¬ÓÉÓÚ²¢²»ÖªµÀ×ÜµÄÒ³ÂëÊı£¬ËùÒÔÎŞ·¨Ìí¼ÓĞÎÈç"1 of 4"µÄÒ³½Å£¬µ±²Ù×÷ÒÑ¾­´æÔÚµÄPDFµÄ¹ı³ÌÖĞ£¬¾Í¿ÉÒÔ»ñÈ¡µ½×ÜµÄÒ³ÂëÊıÁË
+* åœ¨ç¬¬ä¸‰ç« ä¸­ï¼Œåœ¨æ·»åŠ é¡µè„šçš„æ—¶å€™ï¼Œç”±äºå¹¶ä¸çŸ¥é“æ€»çš„é¡µç æ•°ï¼Œæ‰€ä»¥æ— æ³•æ·»åŠ å½¢å¦‚"1 of 4"çš„é¡µè„šï¼Œå½“æ“ä½œå·²ç»å­˜åœ¨çš„PDFçš„è¿‡ç¨‹ä¸­ï¼Œå°±å¯ä»¥è·å–åˆ°æ€»çš„é¡µç æ•°äº†
 
-***µ±´´½¨ĞÂµÄPDFµÄÊ±ºò£¬¿ÉÒÔÔÚ×ÜÒ³ÂëÊıµÄÎ»ÖÃ·ÅÖÃÕ¼Î»·û£¬µ±Íê³ÉÁËËùÓĞµÄPDFµÄÄÚÈİµÄÊ±ºò£¬ÓÃÊµ¼ÊµÄÒ³ÂëÊı´úÌæÕ¼Î»·û¼´¿ÉÊµÏÖÉÏÊöĞ§¹û£¬µ«ÊÇÔÚµ±Ç°ÈëÃÅ½Ì³ÌÖĞ²»×÷ËµÃ÷***
+***å½“åˆ›å»ºæ–°çš„PDFçš„æ—¶å€™ï¼Œå¯ä»¥åœ¨æ€»é¡µç æ•°çš„ä½ç½®æ”¾ç½®å ä½ç¬¦ï¼Œå½“å®Œæˆäº†æ‰€æœ‰çš„PDFçš„å†…å®¹çš„æ—¶å€™ï¼Œç”¨å®é™…çš„é¡µç æ•°ä»£æ›¿å ä½ç¬¦å³å¯å®ç°ä¸Šè¿°æ•ˆæœï¼Œä½†æ˜¯åœ¨å½“å‰å…¥é—¨æ•™ç¨‹ä¸­ä¸ä½œè¯´æ˜***
 
 ```
     PdfDocument pdfDoc =
@@ -759,13 +759,13 @@ newContentStreamAfter()·½·¨´´½¨ĞÂµÄcontent stream***
     canvas.restoreState();
 ```
 
-1. Ìí¼ÓÒ³Ã¼
-2. Ìí¼ÓÒ³½Å´¦ºáÏß
-3. Ìí¼ÓÒ³½ÅÄÚÈİ
-4. Ìí¼ÓË®Ó¡
-  ***µ±ÄãÒÑ¾­Ê¹ÓÃÁËPdfCanvasÊ±£¬itext»á²ì¾õµ½£¬ÓÚÊÇÓĞÁËdocument.showTextAligned(p,...)µÄĞ´·¨***
+1. æ·»åŠ é¡µçœ‰
+2. æ·»åŠ é¡µè„šå¤„æ¨ªçº¿
+3. æ·»åŠ é¡µè„šå†…å®¹
+4. æ·»åŠ æ°´å°
+  ***å½“ä½ å·²ç»ä½¿ç”¨äº†PdfCanvasæ—¶ï¼Œitextä¼šå¯Ÿè§‰åˆ°ï¼Œäºæ˜¯æœ‰äº†document.showTextAligned(p,...)çš„å†™æ³•***
   
-## ¸Ä±äÒ³ÃæµÄ´óĞ¡ºÍ·½Ïò
+## æ”¹å˜é¡µé¢çš„å¤§å°å’Œæ–¹å‘
 ![changed page size and orientation](https://developers.itextpdf.com/sites/default/files/C05F06_1.png)
 ```
     PdfDocument pdfDoc =
@@ -792,12 +792,12 @@ newContentStreamAfter()·½·¨´´½¨ĞÂµÄcontent stream***
     }
     pdfDoc.close();
 ```
-***²Ù×÷ÒÑÓĞµÄPDFÎÄ¼şĞèÒªÒ»Ğ©PDFÏà¹ØµÄÖªÊ¶£¬±ÈÈçÉÏÊö´úÂëÖĞ³öÏÖµÄMediaBox***
+***æ“ä½œå·²æœ‰çš„PDFæ–‡ä»¶éœ€è¦ä¸€äº›PDFç›¸å…³çš„çŸ¥è¯†ï¼Œæ¯”å¦‚ä¸Šè¿°ä»£ç ä¸­å‡ºç°çš„MediaBox***
 
 
-# ÀûÓÃÒÑ¾­´æÔÚµÄPDF
+# ç¬¬å…­ç« ï¼šåˆ©ç”¨å·²ç»å­˜åœ¨çš„PDF
 
-## Ëõ·Å£¬Æ´½ÓºÍÆ½ÒÆ
+## ç¼©æ”¾ï¼Œæ‹¼æ¥å’Œå¹³ç§»
 ![Golden Gate Bridge, original size 16.54 x 11.69 in](https://developers.itextpdf.com/sites/default/files/C06F01_1.png)
 ```
     PdfDocument pdf = new PdfDocument(new PdfWriter(dest));
@@ -832,10 +832,10 @@ newContentStreamAfter()·½·¨´´½¨ĞÂµÄcontent stream***
     pdf.close();
     origPdf.close();
 ```
-* ÉÏÊö´úÂëĞ§¹ûÊÇ½«ÉÏÍ¼Ëõ·Å²»Í¬¹æ¸ñÌí¼Óµ½PDFÖĞ
+* ä¸Šè¿°ä»£ç æ•ˆæœæ˜¯å°†ä¸Šå›¾ç¼©æ”¾ä¸åŒè§„æ ¼æ·»åŠ åˆ°PDFä¸­
 
-## ×é×°PDF
-### ºÏ²¢PDF
+## ç»„è£…PDF
+### åˆå¹¶PDF
 ```
     PdfDocument pdf = new PdfDocument(new PdfWriter(dest));
     PdfMerger merger = new PdfMerger(pdf);
@@ -851,7 +851,7 @@ newContentStreamAfter()·½·¨´´½¨ĞÂµÄcontent stream***
     secondSourcePdf.close();
     pdf.close();
 ```
-**½«Á½¸öPDFÎÄµµºÏ²¢³ÉÒ»¸öPDFÎÄµµ**
+**å°†ä¸¤ä¸ªPDFæ–‡æ¡£åˆå¹¶æˆä¸€ä¸ªPDFæ–‡æ¡£**
 
 ```
     PdfDocument pdf = new PdfDocument(new PdfWriter(dest));
@@ -865,9 +865,9 @@ newContentStreamAfter()·½·¨´´½¨ĞÂµÄcontent stream***
     secondSourcePdf.close();
     pdf.close();
 ```
-**½«Ñ¡¶¨µÄÒ³Ìí¼Óµ½ºÏ²¢ÎÄµµÖĞ**
+**å°†é€‰å®šçš„é¡µæ·»åŠ åˆ°åˆå¹¶æ–‡æ¡£ä¸­**
 
-### ½«Ò³ÃæÌí¼Óµ½PDFÖĞ
+### å°†é¡µé¢æ·»åŠ åˆ°PDFä¸­
 ```
     public static final Map<String, Integer> TheRevenantNominations =
         new TreeMap<String, Integer>();
@@ -887,10 +887,10 @@ newContentStreamAfter()·½·¨´´½¨ĞÂµÄcontent stream***
         TheRevenantNominations.put("Achievement in visual effects", 10);
     }
 ```
-* ¶¨ÒåÒ»¸öºìºÚÊ÷
+* å®šä¹‰ä¸€ä¸ªçº¢é»‘æ ‘
 
->>> TreeMapÊÇÒ»¸öÓĞĞòµÄMap£¬ÔÚ¹¹Ôì·½·¨ÖĞ¿ÉÒÔÓĞ±È½ÏÆ÷²ÎÊı£¬°´ÕÕ¶¨ÒåµÄ±È½Ï¹æÔòÓĞĞòÅÅÁĞMapÖĞµÄÔªËØ£¬Ã»ÓĞ²ÎÊıµÄÇé¿öÏÂÊ¹ÓÃµÄ¾ÍÊÇÄ¬ÈÏµÄ±È½ÏÆ÷£¬
-ÔÚÉú³ÉPDFÖĞÄã»á·¢ÏÖÄ¿Â¼ÊÇ°´ÕÕ×ÖÄ¸Ë³ĞòÅÅÁĞµÄ¡£
+>>> TreeMapæ˜¯ä¸€ä¸ªæœ‰åºçš„Mapï¼Œåœ¨æ„é€ æ–¹æ³•ä¸­å¯ä»¥æœ‰æ¯”è¾ƒå™¨å‚æ•°ï¼ŒæŒ‰ç…§å®šä¹‰çš„æ¯”è¾ƒè§„åˆ™æœ‰åºæ’åˆ—Mapä¸­çš„å…ƒç´ ï¼Œæ²¡æœ‰å‚æ•°çš„æƒ…å†µä¸‹ä½¿ç”¨çš„å°±æ˜¯é»˜è®¤çš„æ¯”è¾ƒå™¨ï¼Œ
+åœ¨ç”ŸæˆPDFä¸­ä½ ä¼šå‘ç°ç›®å½•æ˜¯æŒ‰ç…§å­—æ¯é¡ºåºæ’åˆ—çš„ã€‚
 
 ```
     PdfDocument firstSourcePdf = new PdfDocument(new PdfReader(SRC1));
@@ -925,22 +925,22 @@ newContentStreamAfter()·½·¨´´½¨ĞÂµÄcontent stream***
     }
     firstSourcePdf.close();
 ```
-1. ´´½¨°üº¬ËùÓĞ¡°ÌáÃûĞÅÏ¢¡±µÄPdfDocument¡£
-2. ±éÀúÖ®Ç°µÄTreeMap¡£
-3. »ñµÃÏàÓ¦Ò³ÃæµÄÄÚÈİ²¢¸´ÖÆµ½Ä¿±êPDFÖĞ¡£
-4. TextÔªËØ×é³ÉÒ³Âë£¬Ò³Âë¼õÒ»ÊÇÒòÎªµÚÒ»Ò³²»±»°üº¬ÔÚ¼ÆÊıÒ³ÂëÖĞ¡£
-5. ÉèÖÃtextµÄ±³¾°ÑÕÉ«ÎªColor.WHITE¡£Õâ½«»á»æÖÆÒ»¸öºÍTextÏàÍ¬¹æ¸ñµÄ²»Í¸Ã÷µÄ°×É«¾ØĞÎ¡£ÓÃËüÀ´¸²¸ÇÔ­ÓĞµÄÒ³Âë¡£
-6. ½«text·ÅÖÃµ½µ±Ç°Ò³ÃæµÄ¹Ì¶¨Î»ÖÃ¡£Î»ÖÃµÄµÄ×ø±êÎªX=549£¬Y=742£¬¿í¶ÈÎª100µ¥Î»¡£
-7. ´´½¨Ò»¸öÓÃÓÚÃüÃûÄ¿±êµÄkey
-8. ´´½¨Ò»¸öPdfArray£¬Ëü°üº¬ÁËÄ¿±êµÄÏà¹ØĞÅÏ¢
-   1. Ïà¹ØµÄPage¶ÔÏó
-   2. ¶¨ÒåX£¬Y×ø±êºÍËõ·Å
-   3. X×ø±ê
-   4. Y×ø±ê
-   5. Ëõ·Å
-9. Ä¿±êkeyÓëÄ¿±êÒ³ÃæĞÅÏ¢¹ØÁª
-10. Ìí¼ÓÄ¿Â¼ÄÚÈİ
-11. ÎªÄÚÈİÌí¼Óaction£¨ÊµÏÖµã»÷Ìø×ªµ½¶ÔÓ¦µÄÒ³Ãæ£©
+1. åˆ›å»ºåŒ…å«æ‰€æœ‰â€œæåä¿¡æ¯â€çš„PdfDocumentã€‚
+2. éå†ä¹‹å‰çš„TreeMapã€‚
+3. è·å¾—ç›¸åº”é¡µé¢çš„å†…å®¹å¹¶å¤åˆ¶åˆ°ç›®æ ‡PDFä¸­ã€‚
+4. Textå…ƒç´ ç»„æˆé¡µç ï¼Œé¡µç å‡ä¸€æ˜¯å› ä¸ºç¬¬ä¸€é¡µä¸è¢«åŒ…å«åœ¨è®¡æ•°é¡µç ä¸­ã€‚
+5. è®¾ç½®textçš„èƒŒæ™¯é¢œè‰²ä¸ºColor.WHITEã€‚è¿™å°†ä¼šç»˜åˆ¶ä¸€ä¸ªå’ŒTextç›¸åŒè§„æ ¼çš„ä¸é€æ˜çš„ç™½è‰²çŸ©å½¢ã€‚ç”¨å®ƒæ¥è¦†ç›–åŸæœ‰çš„é¡µç ã€‚
+6. å°†textæ”¾ç½®åˆ°å½“å‰é¡µé¢çš„å›ºå®šä½ç½®ã€‚ä½ç½®çš„çš„åæ ‡ä¸ºX=549ï¼ŒY=742ï¼Œå®½åº¦ä¸º100å•ä½ã€‚
+7. åˆ›å»ºä¸€ä¸ªç”¨äºå‘½åç›®æ ‡çš„key
+8. åˆ›å»ºä¸€ä¸ªPdfArrayï¼Œå®ƒåŒ…å«äº†ç›®æ ‡çš„ç›¸å…³ä¿¡æ¯
+   1. ç›¸å…³çš„Pageå¯¹è±¡
+   2. å®šä¹‰Xï¼ŒYåæ ‡å’Œç¼©æ”¾
+   3. Xåæ ‡
+   4. Yåæ ‡
+   5. ç¼©æ”¾
+9. ç›®æ ‡keyä¸ç›®æ ‡é¡µé¢ä¿¡æ¯å…³è”
+10. æ·»åŠ ç›®å½•å†…å®¹
+11. ä¸ºå†…å®¹æ·»åŠ actionï¼ˆå®ç°ç‚¹å‡»è·³è½¬åˆ°å¯¹åº”çš„é¡µé¢ï¼‰
 
 ```
     //Add the last page
@@ -968,9 +968,9 @@ newContentStreamAfter()·½·¨´´½¨ĞÂµÄcontent stream***
     document.close();
 ```
 
-***ÉÏ±ßµÄÀı×ÓÔÚÊµ¼ÊÓ¦ÓÃÖĞÒ»°ã²»»á³öÏÖ¡£¼ÙÉèTOCÖ»ÓÉÒ»¸öÒ³Ãæ×é³É£¬ÔÚdocumentÖĞÌí¼Ó¸ü¶àµÄĞĞ£¬½«»á·¢ÏÖÒ»¸öÆæ¹ÖµÄÏÖÏó£º
-ÎÄ±¾ÄÚÈİ²»·ûºÏÒ»Ò³µÄ´óĞ¡£¬½«»áÌí¼ÓµÚ¶ş¸öÒ³Ãæ¡£µ«ÊÇµÚ¶ş¸öÒ³ÃæÓÖ²»»áÊÇÒ»¸öĞÂµÄÒ³Ãæ£¬Ëü½«ÔÚµÚÒ»¸öÒ³ÃæÑ­»·Ìí¼ÓÄÚÈİ¡£Ò²¾ÍÊÇËµ£¬
-µÚÒ»Ò³Ö®Ç°Ğ´µÄÄÚÈİ½«»á±»¸²¸Ç¡£Õâ¸öÎÊÌâÊÇ¿ÉÒÔ½â¾öµÄ£¬½ÓÏÂÀ´µÄ½Ì³ÌÖĞ»áÌáµ½¡£***
+***ä¸Šè¾¹çš„ä¾‹å­åœ¨å®é™…åº”ç”¨ä¸­ä¸€èˆ¬ä¸ä¼šå‡ºç°ã€‚å‡è®¾TOCåªç”±ä¸€ä¸ªé¡µé¢ç»„æˆï¼Œåœ¨documentä¸­æ·»åŠ æ›´å¤šçš„è¡Œï¼Œå°†ä¼šå‘ç°ä¸€ä¸ªå¥‡æ€ªçš„ç°è±¡ï¼š
+æ–‡æœ¬å†…å®¹ä¸ç¬¦åˆä¸€é¡µçš„å¤§å°ï¼Œå°†ä¼šæ·»åŠ ç¬¬äºŒä¸ªé¡µé¢ã€‚ä½†æ˜¯ç¬¬äºŒä¸ªé¡µé¢åˆä¸ä¼šæ˜¯ä¸€ä¸ªæ–°çš„é¡µé¢ï¼Œå®ƒå°†åœ¨ç¬¬ä¸€ä¸ªé¡µé¢å¾ªç¯æ·»åŠ å†…å®¹ã€‚ä¹Ÿå°±æ˜¯è¯´ï¼Œ
+ç¬¬ä¸€é¡µä¹‹å‰å†™çš„å†…å®¹å°†ä¼šè¢«è¦†ç›–ã€‚è¿™ä¸ªé—®é¢˜æ˜¯å¯ä»¥è§£å†³çš„ï¼Œæ¥ä¸‹æ¥çš„æ•™ç¨‹ä¸­ä¼šæåˆ°ã€‚***
 
 # installing itext7
 
@@ -1016,9 +1016,9 @@ newContentStreamAfter()·½·¨´´½¨ĞÂµÄcontent stream***
 
 ***
 
-  ÓĞĞ©À©Õ¹¹¦ÄÜ±ØĞëÒªÔÚ»ñµÃÉÌÒµĞí¿ÉÖ¤ºó²ÅÄÜÊ¹ÓÃ,ÒòÎªÊÇ±ÕÔ´µÄ,ËüÒ²²»ÔÚmaven²Ö¿âÖĞ
+  æœ‰äº›æ‰©å±•åŠŸèƒ½å¿…é¡»è¦åœ¨è·å¾—å•†ä¸šè®¸å¯è¯åæ‰èƒ½ä½¿ç”¨,å› ä¸ºæ˜¯é—­æºçš„,å®ƒä¹Ÿä¸åœ¨mavenä»“åº“ä¸­
   
-  **»ñÈ¡Ğí¿ÉÖ¤·½·¨**
+  **è·å–è®¸å¯è¯æ–¹æ³•**
   ```
    <dependency>
         <groupId>com.itextpdf</groupId>
@@ -1027,7 +1027,7 @@ newContentStreamAfter()·½·¨´´½¨ĞÂµÄcontent stream***
     </dependency>
   ```
   
-  **Ê¹ÓÃÀ©Õ¹¹¦ÄÜ**
+  **ä½¿ç”¨æ‰©å±•åŠŸèƒ½**
   ```
     <repositories>
      <repository>
